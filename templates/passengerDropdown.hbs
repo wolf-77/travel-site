@@ -1,0 +1,32 @@
+<div class="passenger-dropdown">
+    <button class="btn form-dropdown-btn dropdown_toggle_btn">
+        <span class="passenger_dropdown_set_text"
+            value="{{dropdown_toggle_btn_value}}">{{dropdown_toggle_btn_name}}</span>
+        <i class="fas fa-angle-down ml-2"></i>
+    </button>
+    <div class="form-dropdown-menu passenger_dropdown_menu">
+        {{#each items}}
+        <div class="form-passenger-item-container passenger_item">
+            <div class="width-150">
+                <span>{{item_name}}</span>
+                <span class="form-passenger-detail-text">{{detail}}</span>
+            </div>
+            <div class="d-flex ml-auto align-item-center">
+                <button class="btn form-passenger-minus-btn passenger_decrease_bnt">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <span class="mx-3 passenger_get_text" name="{{name}}" value="{{item_value}}"
+                    min-value="{{min_value}}">{{item_value}}</span>
+                <button class="btn form-passenger-plus-btn passenger_increase_bnt">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        {{/each}}
+        <div class="border-top d-flex pt-2 mx-2 mt-3">
+            <button class="btn btn-outline-primary ml-auto passenger_done_btn">
+                Done
+            </button>
+        </div>
+    </div>
+</div>

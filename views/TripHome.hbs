@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#e8f0fe" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!--Google Font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--Custom style sheet-->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/calendar.css" />
+  <link rel="stylesheet" href="/css/utilities_style.css" />
+  <!-- preload links -->
+  <link rel="preload" href="/css/style.css" as="style" />
+  <link rel="preload" href="/css/calendar.css" as="style" />
+  <link rel="preload" href="/css/utilities_style.css" as="style" />
+  <link rel="preload" href="/js/trip-main.js" as="script" />
+  <link rel="preload" href="/js/calendar.js" as="script" />
+  <link rel="preload" href="/js/desktop_calendar.js" as="script" />
+  <link rel="preload" href="/js/Trips.js" as="script" />
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" />
+  <link rel="preload" href="/img/Path3.png" as="image">
+  <link rel="preload" href="https://source.unsplash.com/rpopW8c1yqo/488x252" as="image">
+  <link rel="preload" href="https://source.unsplash.com/Pb-0TawZ9qU/488x252" as="image">
+  <link rel="preload" href="https://source.unsplash.com/ZlcMun4LpCA/488x252" as="image">
+  <link rel="preload" href="https://source.unsplash.com/qi3UpY6uFAQ/488x252" as="image">
+  <link rel="preload" href="https://source.unsplash.com/utxoRRvZOkI/488x252" as="image">
+  <link rel="preload" href="https://source.unsplash.com/B64B6-kAWlw/488x252" as="image">
+  <!-- SEO -->
+  <meta name="description"
+    content="find cheapest flight tickets, cheapest hotel deals and cheapest car rentals-you can find best travel services easy and fast-compare flight ticket price, compare hotel deals, compare car rental">
+  <meta name="robots" content="index, nofollow">
+
+  <!--
+    data structure part of website
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Luminoustrip",
+      "url": "https://luminoustrip.com/"
+    }
+  </script>
+  -->
+
+  <!-- <link rel="canonical" href="https://www.luminoustrip.com/"> -->
+  <link rel="canonical" href="http://localhost:3000/" />
+
+  <!-- open graph -->
+  <meta property="og:title" content="Luminoustrip.com-cheap flight ticket,cheap hotel deal, cheap car rental">
+  <meta property="og:description"
+    content="find cheapest flight tickets, cheapest hotel deals and cheapest car rentals-you can find best travel services easy and fast-compare flight ticket price, compare hotel deals, compare car rental">
+  <meta property="og:image" content="/img/full_logo_1.png">
+  <meta property="og:url" content="https://www.luminoustrip.com/">
+
+  <link rel="shortcut icon" type="image/png" href="/img/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/png" href="/img/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <title>Luminoustrip-compare and find cheap fligth tickets, cheap hotel deals and car rentals</title>
+</head>
+
+<body id="body" year={{year}} month={{month}} day={{day}}>
+  <div id="require_message" class="form-invalid-text">Please fill out this field.
+  </div>
+  {{>header}}
+  <div class="back-img-container">
+    <img src="/img/Path3.png" alt="" class="back-img" />
+    <div class="m-auto row">
+      <!--font-family: 'Courgette', cursive;-->
+      <div class="m-auto text-center">
+        <h5 class="dark-blue-color welcome-massage">
+          Find your best hotels, flights and rental cars
+          <div style="height: 8px;"></div>
+          all over the world easy and fast
+          </h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="d-flex mt-150">
+      <div class="d-flex mx-auto">
+        <div class="tab-blocks" id="hotel_tab">
+          <i class="fas fa-bed tab-blocks-icon"></i>
+          <span class="tab-block-name">Hotels</span>
+        </div>
+        <div class="tab-blocks" id="flight_tab">
+          <i class="fas fa-plane tab-blocks-icon"></i>
+          <span class="tab-block-name">Flights</span>
+        </div>
+        <div class="tab-blocks" id="car_tab">
+          <i class="fas fa-car tab-blocks-icon"></i>
+          <span class="tab-block-name">Cars</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <div id="hotel-form-container">
+        <div class="d-flex">
+          <h3 class="form-container-header" id="form_header">Hotels</h3>
+        </div>
+
+        {{>hotelForm}}
+        {{>flightForm}}
+        {{>carForm}}
+      </div>
+    </div>
+    <div class="mt-100">
+      <div class="py-4 dark-blue-color">
+        <h4>Popular destinations</h4>
+      </div>
+      <div class="row p-2">
+        {{>billboard billboard_context}}
+      </div>
+    </div>
+  </div>
+  {{>footer footer_context}}
+
+  <script src="/js/trip-main.js"></script>
+  <script src="/js/calendar.js"></script>
+  <script src="/js/desktop_calendar.js"></script>
+  <script src="/js/Trips.js"></script>
+  <script src="/js/service.js"></script>
+
+</body>
+
+</html>

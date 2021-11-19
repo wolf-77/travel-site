@@ -1,0 +1,15 @@
+{{#each billboard}}
+<div class="billboard-container">
+    <div class="billboard-aspect-ratio">
+        <a href="/city?name={{city_name}}">
+            <div class="img-billboard-container">
+                <div class="gradient-rec">
+                    <h5 class="billboard-name">{{billboard_name}}</h5>
+                </div>
+                <div class="black-rec"></div>
+                <img src="{{img_name}}" class="billboard-img" alt="{{city_name}}" />
+            </div>
+        </a>
+    </div>
+</div>
+{{/each}}

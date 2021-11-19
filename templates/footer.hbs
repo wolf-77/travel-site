@@ -1,0 +1,20 @@
+<footer class="footer">
+    <div class="container border-top pt-5 pb-3">
+        <div class="d-flex">
+            <ul class="nav mx-auto">
+                {{#each items}}
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{link}}">{{name}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="mb-3 mt-4">
+            <span id="footer_copyright" class="bold"></span>
+        </div>
+    </div>
+</footer>
+<script>
+    let this_year = new Date().getFullYear();
+    document.getElementById('footer_copyright').innerHTML = "&copy; " + this_year + " luminoustrip";
+</script>

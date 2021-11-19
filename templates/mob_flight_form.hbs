@@ -1,0 +1,64 @@
+<div id="flight_form" class="d-none tab-form custom_form" action="flight" blank>
+    <div class="non_submit_form mb-3 d-flex" style="flex-wrap: wrap;">
+        <div>
+            {{>mob_passenger passenger_dropdown_context}}
+        </div>
+        <div class="d-flex">
+            {{>mob_dropdown_model flight_dropdown_context}}
+            {{>mob_dropdown_model flight_class_dropdown_context}}
+        </div>
+    </div>
+    <div id="none_multi_city_form_container">
+        <div id="form_round_trip_input_container" class="submit_form">
+            <div class="mb-3">
+                {{> mob_dualLocation_input flight_dualLocationInput_context}}
+            </div>
+            <div class="mb-3">
+                {{>mob_dualCalendarInput flight_dual_calendar_context}}
+            </div>
+            <div class="mb-5">
+                <button type="submit" class="btn btn-primary mob-form-button">Search</button>
+            </div>
+        </div>
+        <div id="form_one_way_input_container" class="submit_form d-none">
+            <div class="mb-3">
+                {{> mob_dualLocation_input flight_dualLocationInput_context}}
+            </div>
+            <div class="mb-3">
+                {{>mob_calendar_input}}
+            </div>
+            <div class="mb-5">
+                <button type="submit" class="btn btn-primary mob-form-button">Search</button>
+            </div>
+        </div>
+    </div>
+    <div id="multi_city_form_container" class=" d-none complex_submit_form mt-3">
+        <div id="multi_city_form_row_container">
+            <div class="multi_city_form_row border-bottom pb-3 pt-2 complex_form_row">
+                <div class="d-flex mb-3">
+                    <span class="flight_counter mob-flight-counter dark-blue-color">
+                        Flight 1
+                    </span>
+                    <button class="btn multi_city_form_close_btn mob-multi-city-close-btn" disabled='true'>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="mb-3">
+                    {{> mob_dualLocation_input flight_dualLocationInput_context}}
+                </div>
+                <div class="mb-3">
+                    {{>mob_calendar_input}}
+                </div>
+            </div>
+        </div>
+        <div class="d-flex mb-5 mt-3">
+            <button type="submit" class="btn btn-primary mob-form-button" style="width: 175px;">
+                Search
+            </button>
+            <button id="multi_city_add_btn" class="btn mob-multi-city-add-btn">
+                <i class="fas fa-plus"></i>
+            </button>
+
+        </div>
+    </div>
+</div>

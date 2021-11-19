@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#e8f0fe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- style -->
+     <link rel="stylesheet" type="text/css" href="/css/contact.css">
+     <!-- title -->
+     <link rel="shortcut icon" type="image/png" href="/img/favicon-16x16.png">
+     <link rel="shortcut icon" type="image/png" href="/img/favicon-32x32.png">
+     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+     <link rel="manifest" href="/manifest.json">
+    <title>No Connection</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="card" style="width: 18rem; height: 550px; margin-top: 40px; border-color: white">
+            <img src="/img/full_logo_1.png" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text" style="color: #45526E; text-align: center;">
+                  You are offline
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="/" style="margin-top: 100px;">
+                    <button class="btn homeN">Try Again</button>
+                </a>
+              </div>
+            </div>
+        </div>
+        <footer class="footer fixed-bottom" style="text-align: center; color: #45526E;">
+            <div class="py-4">
+                <span id="footer_copyright" class="bold"></span>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let date = new Date().getFullYear();
+        document.getElementById('footer_copyright').innerHTML = "&copy; " + date + " luminoustrip.com";
+    </script>
+</body>
+</html>

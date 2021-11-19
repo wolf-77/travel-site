@@ -1,0 +1,67 @@
+<div id="mob_range_calendar" class="mob-dropdown-model mob_cal_model">
+    <div class="v-flex h-100">
+        <div class="model_content_container mob-model-content-container">
+            <div class="v-flex h-100">
+                <div class="shadow-sm border-bottom" style="z-index: 1;">
+                    <div class="mob-model-header border-bottom">
+                        <div class="m-auto d-flex reservation_night_container"
+                            invalid-title="Sorry! Reservations for more than 30 nights are not possible.">
+                            <span class="mob-model-title my-auto model_title">Choose date</span>
+                            <span>&nbsp;</span>
+                            <span class="mob-calendar-night-counter my-auto dark-blue-color mob_hotel_nights_counter">(?
+                                nights)</span>
+                        </div>
+                        <div class="mob-model-header-close-button-container my-auto">
+                            <div class="d-flex h-100">
+                                <button class="btn my-auto model_close_bnt mob-multi-city-close-btn">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mob-model-header-check-button-container my-auto">
+                            <div class="d-flex h-100">
+                                <button class="btn my-auto mob_model_confirm_btn mob-check-btn">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overstep_night_alert d-none" style="overflow: hidden;">
+                        <div class="alert alert-danger mt-0 mb-0" role="alert">
+                            <span>Sorry, reservation for more than 30 nights are not possible.</span>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3 mb-2 px-15 cal_selector_container">
+                        <button class="btn mob-cal-btn cal_first_day_selector">
+                        </button>
+                        <button class="cal_second_day_selector btn ml-auto mob-cal-btn">
+                        </button>
+                    </div>
+
+                    <div class="mob-cal-padding">
+                        <div class="mob-cal-day-header-container">
+                            <span class="mob-cal-day-header dark-blue-color">Su</span>
+                            <span class="mob-cal-day-header dark-blue-color">Mo</span>
+                            <span class="mob-cal-day-header dark-blue-color">Tu</span>
+                            <span class="mob-cal-day-header dark-blue-color">We</span>
+                            <span class="mob-cal-day-header dark-blue-color">Th</span>
+                            <span class="mob-cal-day-header dark-blue-color">Fr</span>
+                            <span class="mob-cal-day-header dark-blue-color">Sa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mob-cal-model-content">
+
+                    <div class="cal_root">
+
+                    </div>
+                </div>
+                {{!-- <div class="mob-model-footer">
+                    <span class="day_counter"></span>
+                    <button class="btn btn-primary mob-confirm-btn mob_model_confirm_btn ml-auto "
+                        disabled="true">Confirm</button>
+                </div> --}}
+            </div>
+        </div>
+    </div>
+</div>

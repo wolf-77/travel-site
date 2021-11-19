@@ -1,0 +1,5 @@
+# www.luminoustrip.com
+# createed on 2020-05-19
+
+user-agent: *
+Allow: /

@@ -1,0 +1,23 @@
+<div id="hotel_form" action="hotel" class="custom_form tab-form" blank>
+    <div class="non_submit_form">
+        <div class="my-3">
+            {{>dropdown guest_dropdown_context}}
+        </div>
+    </div>
+    <div class="submit_form pt-2">
+        <div class="form-row">
+            <div class="col-12 col-lg mb-3">
+                {{>locationInput hotel_input_context}}
+            </div>
+            <div class="col-12 col-lg-auto mx-0 mx-lg-2 mb-3">
+                {{> dualCalendar hotel_dual_calendar_context}}
+            </div>
+            <div class="col-lg-auto">
+                <button type="submit" class="btn btn-primary form-button col-12">
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

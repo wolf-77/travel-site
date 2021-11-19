@@ -1,0 +1,70 @@
+<div id="flight_form" class="d-none custom_form tab-form" action="flight" blank>
+    <div class="d-flex my-3 non_submit_form">
+        {{>passengerDropdown passenger_dropdown_context}}
+        {{>dropdown flight_dropdown_context}}
+        {{>dropdown flight_class_dropdown_context}}
+    </div>
+    <div id="none_multi_city_form_container">
+        <div id="form_round_trip_input_container" class="submit_form pt-2">
+            <div class="form-row">
+                <div class="col-12 col-xl mb-3">
+                    {{>dualLocationInput flight_dualLocationInput_context}}
+                </div>
+                <div class="col-12 col-xl-auto mx-0 mx-xl-2 mb-3">
+                    {{> dualCalendar flight_dual_calendar_context}}
+                </div>
+                <div class="col-xl-auto">
+                    <button type="submit" class="btn btn-primary form-button col-12">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="form_one_way_input_container" class="submit_form form-row d-none pt-2">
+            <div class="col-12 col-xl mb-3">
+                {{>dualLocationInput flight_dualLocationInput_context}}
+            </div>
+            <div class="col-12 col-xl-auto mx-0 mx-xl-2 mb-3">
+                {{> calendar}}
+            </div>
+            <div class="col-xl-auto">
+                <button type="submit" class="btn btn-primary form-button col-12">
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="multi_city_form_container" class=" d-none complex_submit_form">
+        <div id="multi_city_form_row_container">
+            <div class="multi_city_form_row multi-city-form-row complex_form_row">
+                <div class="d-flex mb-2 mt-3 ml-2 mr-1">
+                    <span class="dark-blue-color flight_counter multi-city-flight-counter">
+                        Flight 1
+                    </span>
+                    <button class="btn btn-outline-danger form-multi-city-close-btn multi_city_form_close_btn ml-auto">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="form-row mx-0 col p-0">
+                    <div class="col-12 col-lg mb-3">
+                        {{>dualLocationInput flight_dualLocationInput_context}}
+                    </div>
+                    <div class="col col-lg-auto mx-0 ml-lg-2 mb-3">
+                        {{> calendar}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex mt-3 align-item-center mx-1">
+            <button type="submit" class="btn btn-primary form-button">
+                Search
+            </button>
+            <button id="multi_city_add_btn" class="btn btn-outline-primary form-multi-city-add-btn">
+                <i class="fas fa-plus"></i>
+            </button>
+
+
+        </div>
+    </div>
+</div>

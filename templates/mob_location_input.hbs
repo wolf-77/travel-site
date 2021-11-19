@@ -1,0 +1,63 @@
+{{!-- <div class="mob_input_model">
+    <div class="position-relative form_input_container">
+        <div class="mob-input-icon-container align-item-center">
+            <div class="d-flex h-100">
+                <span class="material-icons mob-input-icon autocomplete_set_icon">
+                    search
+                </span>
+            </div>
+        </div>
+        <input class="form-control mob-input form_input" placeholder="{{place_holder}}" spellcheck="false" type="text"
+            name="{{name}}" value="" invalid-title="Invalid input! Please select from dropdown menu." readonly="true" />
+    </div>
+    <div class="mob-dropdown-model mob_autocomplete_model">
+        <div class="v-flex h-100">
+            <div class="model_content_container mob-model-content-container">
+                <div class="v-flex h-100">
+                    <div class="mob-model-header">
+                        <div class="mb-2 d-flex align-item-center">
+                            <button class="btn mob-model-close-btn">
+                                <i class="fas fa-times model_close_bnt"></i>
+                            </button>
+                            <span class="mob-model-title my-auto">{{model_title}}</span>
+                        </div>
+                        <div class="position-relative model_input_container">
+                            <div class="mob-input-icon-container align-item-center">
+                                <div class="d-flex h-100">
+                                    <span class="material-icons mob-input-icon autocomplete_set_icon">
+                                        search
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mob-input-spinner form_input_spinner">
+                                <div class="d-flex h-100">
+                                    <div class="spinner-border text-primary my-auto" role="status">
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="form-control mob-input model_input" placeholder="{{place_holder}}"
+                                autocomplete-type="{{autocomplete_type}}" icon-name='{{location_icon}}'
+                                spellcheck="false" type="text" />
+                        </div>
+                    </div>
+                    <div class="mob-model-content mob_autocomplete_model_content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+<div class="position-relative form_input_container">
+    <div class="mob-input-icon-container align-item-center">
+        <div class="d-flex h-100">
+            <span class="material-icons mob-input-icon autocomplete_set_icon">
+                search
+            </span>
+        </div>
+    </div>
+    <input class="form-control mob-input form_input" placeholder="{{place_holder}}" spellcheck="false" type="text"
+        name="{{name}}" value="" readonly="true" model-title="{{model_title}}" autocomplete-type="{{autocomplete_type}}"
+        icon-name='{{location_icon}}' />
+</div>

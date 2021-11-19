@@ -1,0 +1,51 @@
+<div class="dualCalender_dropdown calendar-dropdown" has-day-limit='{{day_limit_attr}}'>
+    <div class="form-calendar-input-container calendar_dropdown_toggle_bnt">
+        <span class="material-icons form-calendar-icon">
+            date_range
+        </span>
+        <input type="text" class="form-control form-calendar-input cal_first_input"
+            placeholder="{{first_day_selector_placeholder}}" readonly="true" name="{{first_name}}" value="" />
+        <div class="mx-auto d-flex" style="border-radius: inherit;">
+            <div class="calendar-input-divider"></div>
+            <input type="text" class="form-control form-calendar-input cal_second_input"
+                placeholder="{{second_day_selector_placeholder}}" readonly="true" name="{{second_name}}" value="" />
+        </div>
+    </div>
+    <div class="calendar_dropdown_menu form-calendar-dropdown-menu">
+        <div class="cal-w">
+            <div class="dualCal-date-container">
+                <div class="cal-tooltip">
+                    <button class="btn cal-btn cal-selector cal-selector-active cal_first_day_selector">
+                    </button>
+                    <span class="tooltiptext">{{first_day_selector_placeholder}}</span>
+                </div>
+                <div class="cal-tooltip ml-auto">
+                    <button class="cal_second_day_selector btn cal-btn cal-selector">
+                    </button>
+                    <span class="tooltiptext">{{second_day_selector_placeholder}}</span>
+                </div>
+
+            </div>
+            <div class="position-relative">
+                <div class="cal-pn-btn-container mt-3 px-3">
+                    <button class="btn cal-pn-btn previous_month_btn" hidden="true">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="next_month_btn btn cal-pn-btn" style="right: 1rem;">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cal-root cal_root"></div>
+            <div class="mt-3 d-flex">
+                <span class="cal-night-counter dark-blue-color cal_night_counter"></span>
+                <div class="ml-auto">
+                    <button class="cal_reset_btn btn cal-reset-btn">
+                        Reset
+                    </button>
+                    <button class="btn btn-outline-primary cal_done_btn">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

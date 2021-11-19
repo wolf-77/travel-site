@@ -1,0 +1,23 @@
+<div class="form-autocomplete-dropdown autocomplete_dropdown">
+    <div>
+        <div class="position-absolute" style="height: 50px;">
+            <div class="d-flex h-100">
+                <span class="material-icons form-input-icon autocomplete_set_icon" icon-name="search">
+                    search
+                </span>
+            </div>
+        </div>
+        <div class="form-input-spinner form_input_spinner">
+            <div class="d-flex h-100">
+                <div class="spinner-border text-primary my-auto" role="status">
+                </div>
+            </div>
+        </div>
+        <input type="text" name="{{name}}" value="" invalid-title="Invalid location! Please select from dropdown menu."
+            class="form-control form-input autocomplete_input_box {{input_class}}" placeholder="{{place_holder}}"
+            autocomplete-type="{{autocomplete_type}}" icon-name='{{location_icon}}' spellcheck="false" />
+
+    </div>
+    <div class="form-autocomplete-dropdown-menu autocomplete_dropdown_menu">
+    </div>
+</div>

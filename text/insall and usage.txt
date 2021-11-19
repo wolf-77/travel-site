@@ -1,0 +1,11 @@
+npm install npm@latest -g
+npm -v
+npm install express --save
+npm i hbs --> in project directory
+npm i helmet
+npm i body-parser
+npm i express-device    --> for device detecting
+npm i compression       --> for gzip compression
+npm i request
+
+nodemon server/app.js -e js,hbs,css -> run server command

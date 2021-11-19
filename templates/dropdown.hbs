@@ -1,0 +1,16 @@
+<div class="dropdown">
+  <button class="btn form-dropdown-btn dropdown_toggle_btn dropdown_set_value" name="{{name}}" value="{{value}}"
+    {{ignore_attr}}>
+    <span class="dropdown_set_text">{{dropdown_toggle_btn_name}}</span>
+    <i class="fas fa-angle-down ml-2"></i>
+  </button>
+  <div class="form-dropdown-menu dropdown_menu">
+    {{#each dropdown_items}}
+    <button id="{{id}}"
+      class="btn form-dropdown-item dropdown_item dropdown_get_value dropdown_get_text {{selected_item_class}}"
+      value="{{value}}">
+      {{item}}
+    </button>
+    {{/each}}
+  </div>
+</div>

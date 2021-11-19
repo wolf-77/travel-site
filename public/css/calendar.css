@@ -1,0 +1,267 @@
+/*XS => 0*/
+@media screen and (min-width: 0px) {
+  .cal-w {
+    min-width: 337px;
+    max-width: 337px;
+  }
+}
+/*LG => 992*/
+@media screen and (min-width: 992px) {
+  .cal-w {
+    min-width: 672px;
+    max-width: 672px;
+  }
+}
+@keyframes example {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.cal-blue-icon {
+  color: #4285f4;
+}
+.cal-btn {
+  font-size: 14px;
+  width: 130px;
+  height: 38px;
+  border-radius: 5px;
+  border: 2px solid #c1c1c1;
+  transition: 0;
+  cursor: default !important;
+}
+.cal-btn-container {
+  margin: 0 0.75rem;
+  position: relative;
+  cursor: default;
+}
+/* .cal-done-btn {
+  border-radius: 0.3rem;
+  margin: 0 0.5rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff;
+}
+.cal-done-btn:hover {
+  background-color: #e8f0fe;
+  color: #007bff;
+} */
+.cal-done-btn:active {
+  background-color: #cde1fa !important;
+}
+.cal-fs {
+  font-size: medium;
+}
+.cal-icon {
+  font-size: 15px;
+  float: left;
+}
+.cal-lm-btn {
+  background-color: white;
+  border: none;
+  height: calc(100% - 2px);
+  margin: 1px 0.5px;
+  font-weight: 600;
+  font-size: larger;
+}
+.cal-lm-btn:active {
+  background-color: #dcdede !important;
+}
+.cal-lm-btn:hover {
+  background-color: #eceeef;
+}
+.cal-lm-btn:disabled {
+  background-color: white;
+}
+.cal-lm-btn-container {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+}
+.cal-night-counter {
+  font-size: 14px;
+  font-weight: 600;
+  margin: auto 1rem;
+}
+.cal-pn-btn-container {
+  position: absolute;
+  display: flex;
+  top: 0;
+  width: 100%;
+}
+
+.cal-pn-btn {
+  font-weight: 1000;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #c9d6e6;
+  color: #727272 !important;
+}
+
+.cal-pn-btn:active {
+  background-color: #dfe4ea !important;
+}
+.cal-pn-btn:hover {
+  background-color: #f0f0f0;
+}
+.cal-reset-btn {
+  border-radius: 0.3rem;
+  margin: 0 0.75rem;
+  font-size: 15px;
+  font-weight: bold;
+  color: #212529 !important;
+}
+.cal-reset-btn:hover {
+  background-color: #eceeef;
+}
+.cal-reset-btn:active {
+  background-color: #dcdede !important;
+}
+.cal-root {
+  display: flex;
+  overflow: hidden;
+}
+
+.cal-selector-active {
+  border-color: #0091ff !important;
+}
+.cal-table {
+  font-size: 14px;
+  font-weight: normal;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  text-align: center;
+}
+.cal-tbody-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 14px;
+  box-shadow: none !important;
+  color: black;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.cal-tbody-btn:hover {
+  background-color: #eceeef;
+}
+.cal-tbody-btn:active {
+  background-color: #dee2e6 !important;
+}
+.cal-tbody-btn:disabled {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.6);
+}
+.cal-tbody-btn-animation {
+  animation-name: example;
+  animation-duration: 0.225s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+.cal-tbody-btn-disabled,
+.cal-tbody-btn-disabled:hover {
+  cursor: default;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  box-shadow: none !important;
+}
+.cal-tbody-end-btn-danger,
+.cal-tbody-end-btn-danger:hover {
+  border: 2px solid #dc3545;
+  background-color: white;
+}
+.cal-tbody-end-btn,
+.cal-tbody-end-btn:hover {
+  border: 2px solid #007bff;
+  background-color: white;
+}
+.cal-tbody-start-btn,
+.cal-tbody-start-btn:disabled,
+.cal-tbody-start-btn:hover {
+  background-color: #007bff;
+  color: white;
+  opacity: 1 !important;
+}
+.cal-td-end-radius {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: right !important;
+}
+.cal-td-start-radius {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  text-align: left !important;
+}
+.cal-td-selected-danger-bg {
+  /* background-color: #f8d7da; */
+  background-color: #ffe3e6;
+  transition: all ease 0.3s;
+}
+.cal-td-selected-bg {
+  /* background-color: #e5edfb; */
+  /* background-color: #cce5ff; */
+  background-color: #d5e8fd;
+  transition: all ease 0.3s;
+}
+
+.cal-thead-cell {
+  width: calc(100% / 7);
+}
+
+table {
+  padding: 0 10px;
+}
+.table td {
+  padding: 0;
+}
+.table tr {
+  padding: 0;
+}
+.cal-tooltip {
+  position: relative;
+}
+
+.cal-tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 120px;
+  background-color: #272727;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: small;
+}
+
+.cal-tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #272727 transparent;
+}
+
+.cal-tooltip:hover .tooltiptext {
+  visibility: visible;
+}

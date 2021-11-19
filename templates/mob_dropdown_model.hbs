@@ -1,0 +1,29 @@
+<div class="mob_dropdown">
+    <div>
+        <button class="btn form-dropdown-btn dropdown_toggle_btn dropdown_set_value" name="{{name}}" value="{{value}}"
+            {{ignore_attr}}>
+            <span class="material-icons mob-dropdown-icon">
+                {{mob_dropdown_icon_name}}
+            </span>
+            <span class="vertical-align-middle  {{dropdown_set_text_type}}">{{default_text}}</span>
+            <span class="material-icons mob-dropdown-arrow-icon">
+                keyboard_arrow_down
+            </span>
+        </button>
+    </div>
+    <div class="mob-dropdown-model mob_dropdown_model">
+        <div class="h-100 d-flex">
+            <div class="mob-dropdown-model-content mob_dropdown_model_content">
+                <div style="padding: 1rem ">
+                    {{#each dropdown_items}}
+                    <button id="{{id}}"
+                        class="btn form-dropdown-item dropdown_item dropdown_get_value dropdown_get_text {{selected_item_class}}"
+                        value="{{value}}">
+                        {{item}}
+                    </button>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

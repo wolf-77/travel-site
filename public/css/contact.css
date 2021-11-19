@@ -1,0 +1,42 @@
+#logo {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #45526E;
+}
+
+#line {
+    width: 100%;
+    border-width: 2px;
+    border-color: #45526E;
+}
+
+.homeN {
+    border-color: #45526E;
+    color: #45526E;
+    
+}
+
+.homeN:hover {
+    background-color: #45526E;
+    color: white;
+}
+
+#text {
+    color: #45526E;
+}
+
+.links {
+    color: #45526E;
+    text-decoration: none;
+}
+.links:visited {
+    color: #45526E;
+}
+.links:hover {
+    color: #45526E;
+    text-decoration: none;
+}
+.links:active {
+    color: #45526E;
+    text-decoration: none;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#e8f0fe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="/css/contact.css">
+    <!-- title -->
+    <link rel="shortcut icon" type="image/png" href="/img/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="robots" content="noindex, nofollow" >
+    <title>Luminoustrip-Send feedback</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-fixed" style="padding-top: 10%;">
+                <div class="card" style="border-color: #45526E;">
+                    <div class="card-header">
+                        Send your feedback to us and we analyze it as soon as possible.
+                    </div>
+                    <div class="card-body">
+                        <form action="https://formspree.io/xbjkzkda" method="POST" class="needs-validation" novalidate>
+                            <div class="form-group">
+                              <label style="padding-top: 4px;">Email address</label>
+                              <input type="email" name="_replyto" class="form-control" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                              <div class="invalid-feedback">
+                                Please Enter Valid Email.
+                              </div>  
+                            </div>
+                            <input type="hidden" name="_subject" value="user feedback sends via formspree.io" />
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" name="message" maxlength="500" id="exampleFormControlTextarea1" rows="5" required></textarea>
+                            </div>
+                            <button class="btn homeN" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container" style="text-align: center; color: #45526E;">
+        <br>
+        We are using formspree.io service for receiving and sending emails
+    </div>
+    <footer class="footer" style="text-align: center; color: #45526E;">
+        <div>
+          <span id="footer_copyright" class="bold"></span>
+        </div>
+    </footer>
+    <script>
+        let date = new Date().getFullYear();
+        document.getElementById('footer_copyright').innerHTML = "&copy; " + date + " luminoustrip";
+    </script>
+    <script src="/js/service.js"></script>
+</body>
+</html>

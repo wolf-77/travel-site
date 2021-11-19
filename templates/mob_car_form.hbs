@@ -1,0 +1,23 @@
+<div id="car_form" class="d-none custom_form tab-form" action="car" blank>
+    <div class="my-3 mx-1 custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="location_type_checkbox" />
+        <label class="custom-control-label" for="location_type_checkbox">Return car to a different location</label>
+    </div>
+    <div>
+        <div id="same_location_input_container" class="submit_form">
+            <div class="mb-3">
+                {{>mob_location_input car_same_location_input_context}}
+            </div>
+            <div class="mb-5">
+                <button type="submit" class="btn btn-primary mob-form-button transfer_btn">Search</button>
+            </div>
+        </div>
+        <div id="different_location_input_container" class="d-none submit_form">
+            {{> mob_dualLocation_input car_dualLocationInput_context}}
+            <div class="mb-5">
+                <button type="submit" class="btn btn-primary mob-form-button">Search</button>
+            </div>
+        </div>
+    </div>
+
+</div>

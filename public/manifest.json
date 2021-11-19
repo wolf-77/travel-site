@@ -1,0 +1,23 @@
+{
+    "name": "Luminous Trip",
+    "short_name": "lumnoustrip",
+    "start_url": "http://localhost:3000/",
+    "display": "minimal-ui",
+    "background_color": "#e8f0fe",
+    "theme_color": "#e8f0fe",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/img/android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/img/android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ]
+}

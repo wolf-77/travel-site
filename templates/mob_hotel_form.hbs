@@ -1,0 +1,16 @@
+<div id="hotel_form" class="tab-form custom_form" action="hotel" blank>
+    <div class="mb-3 non_submit_form">
+        {{>mob_dropdown_model guest_dropdown_context}}
+    </div>
+    <div class="submit_form">
+        <div class="mb-3">
+            {{>mob_location_input hotel_input_context}}
+        </div>
+        <div class="mb-3">
+            {{>mob_dualCalendarInput hotel_dual_calendar_context}}
+        </div>
+        <div class="mb-5">
+            <button type="submit" class="btn btn-primary mob-form-button">Search</button>
+        </div>
+    </div>
+</div>

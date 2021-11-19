@@ -1,0 +1,50 @@
+<div class="mob_passenger_dropdown">
+    <button class="btn form-dropdown-btn dropdown_toggle_btn">
+        <span class="material-icons mob-dropdown-icon">
+            person_outline
+        </span>
+        <span class="vertical-align-middle passenger_dropdown_set_text">1</span>
+        <span class="material-icons mob-dropdown-arrow-icon">
+            keyboard_arrow_down
+        </span>
+    </button>
+    <div class="mob-dropdown-model mob_dropdown_model">
+        <div class="h-100 d-flex">
+            <div class="mob-dropdown-model-content mob_dropdown_model_content">
+                <div class="mob-passenger-dropdown-model">
+                    <div class="mob-passenger-dropdown-header border-bottom">
+                        <span class="mob-passengers-dropdown-title dark-blue-color">
+                            Passengers
+                        </span>
+                        <div class="mob-passenger-check-btn-container">
+                            <div class="d-flex h-100">
+                                <button class="btn my-auto mob_passenger_dropdown_close_btn mob-check-btn">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    {{#each items}}
+                    <div class="form-passenger-item-container passenger_item">
+                        <div class="width-150">
+                            <span>{{item_name}}</span>
+                            <span class="form-passenger-detail-text">{{detail}}</span>
+                        </div>
+                        <div class="d-flex ml-auto align-item-center">
+                            <button class="btn form-passenger-minus-btn passenger_decrease_bnt">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="mx-3 passenger_get_text" name="{{name}}" value="{{item_value}}"
+                                min-value="{{min_value}}">{{item_value}}</span>
+                            <button class="btn form-passenger-plus-btn passenger_increase_bnt">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
